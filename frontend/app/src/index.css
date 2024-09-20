@@ -1,0 +1,103 @@
+body {
+  background-color: black;
+  color: #00ff95;
+  font-family: Arial, sans-serif;
+}
+
+.auth-container, .welcome-container {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); 
+}
+
+h2 {
+  text-align: center;
+}
+
+form, .welcome-container p {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+input {
+  background-color: #333;
+  color: #00ff95;
+}
+
+button {
+  background-color: #00ff95;
+  color: black;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00e686;
+}
+
+.welcome-container {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Horizontally center the content */
+}
+
+.user-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image fits inside the circle */
+  border: 2px solid #00ff95; /* Optional: Add a border around the circle */
+}
+
+input[type="file"] {
+  margin-top: 15px;
+}
+
+.user-info {
+  width: 100%;
+  text-align: left; /* Align the text to the left */
+  margin-top: 15px;
+}
+
+.user-info p {
+  margin: 5px 0;
+}
+
+button {
+  margin-top: 20px;
+}
+
+.popup {
+  color: #00ff95;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 10px;
+  background-color: #00ff95;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%; /* Ensures full width for a clean look */
+  margin-top: 10px; /* Adds space above the button */
+}
+
+.btn:hover {
+  background-color: #00e686;
+}

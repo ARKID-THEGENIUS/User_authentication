@@ -12,7 +12,7 @@ function SignIn() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add login logic here
+    
     navigate('/welcome');
   };
 

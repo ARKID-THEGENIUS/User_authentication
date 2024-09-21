@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { v4 as uuidv4 } from 'uuid'; // To generate a random user ID
+import { v4 as uuidv4 } from 'uuid'; 
 
 function SignUp() {
   const [formData, setFormData] = useState({
@@ -19,9 +19,9 @@ function SignUp() {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // Assuming password confirmation is correct, generate an ID and navigate to welcome page
+    
     if (formData.password === formData.confirmPassword) {
-      const userId = uuidv4(); // Generate a random ID
+      const userId = uuidv4(); 
       navigate('/welcome', { state: { ...formData, userId } });
     } else {
       alert('Passwords do not match!');
